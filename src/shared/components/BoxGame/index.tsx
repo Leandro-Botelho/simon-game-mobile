@@ -1,6 +1,6 @@
 import { createBox } from "@shopify/restyle";
 import BoxItem from "./components/BoxItem";
-import { ThemeProps } from "../../theme";
+import { ThemeProps } from "../../../theme";
 
 const Box = createBox<ThemeProps>();
 

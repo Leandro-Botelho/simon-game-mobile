@@ -1,5 +1,5 @@
-import AppText from "@/components/AppText";
-import BoxGame from "@/components/BoxGame";
+import AppText from "@/shared/components/AppText";
+import BoxGame from "@/shared/components/BoxGame";
 import { ThemeProps } from "@/theme";
 import { createBox, createText } from "@shopify/restyle";
 

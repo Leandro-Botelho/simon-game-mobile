@@ -5,7 +5,7 @@ import {
   TouchableOpacityProps,
   ViewStyle,
 } from "react-native";
-import { ThemeProps } from "../../../../theme";
+import { ThemeProps } from "../../../../../theme";
 
 interface ITouchBox {
   opacity: 1 | 0.5;

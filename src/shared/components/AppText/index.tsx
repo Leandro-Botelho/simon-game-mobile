@@ -1,5 +1,5 @@
 import { createBox, createText } from "@shopify/restyle";
-import { ThemeProps } from "../../theme";
+import { ThemeProps } from "../../../theme";
 import { PropsWithChildren } from "react";
 import { StyleProp, TextStyle, TouchableOpacityProps } from "react-native";
 import { Link, LinkProps } from "expo-router";

@@ -1,4 +1,4 @@
-import BoxItem from "@/components/BoxGame/components/BoxItem";
+import BoxItem from "@/shared/components/BoxGame/components/BoxItem";
 import { ThemeProps } from "@/theme";
 import { createBox, createText } from "@shopify/restyle";
 import { router } from "expo-router";
