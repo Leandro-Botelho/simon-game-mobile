@@ -88,7 +88,6 @@ export const Game = () => {
 
     const currentIndex = newPlayerSequency.length - 1;
     if (newPlayerSequency[currentIndex] !== sequency[currentIndex]) {
-      console.log("Você perdeu!");
       router.push({
         pathname: "/(screens)/FinishGame",
         params: {
