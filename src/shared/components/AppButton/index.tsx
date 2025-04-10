@@ -7,7 +7,7 @@ import {
   TouchableOpacityProps,
 } from "react-native";
 import AppText from "../AppText";
-import { PropsWithChildren } from "react";
+import { ComponentProps, PropsWithChildren } from "react";
 
 interface IAppButton {
   onPress?: () => void;
@@ -18,23 +18,10 @@ const BaseButton = createBox<ThemeProps, TouchableOpacityProps>(
   TouchableOpacity
 );
 
-const Button = ({
-  onPress,
-  style,
-  children,
-}: PropsWithChildren<IAppButton>) => {
-  return (
-    <BaseButton
-      activeOpacity={0.65}
-      bg="white"
-      pb="s"
-      borderRadius={8}
-      onPress={onPress}
-      style={style}
-    >
-      {children}
-    </BaseButton>
-  );
+export type IAppBaseButtonProps = ComponentProps<typeof BaseButton> & {};
+
+const AppButton = ({ style, ...props }: IAppBaseButtonProps) => {
+  return <BaseButton style={style} {...props} />;
 };
 
-export default Button;
+export default AppButton;

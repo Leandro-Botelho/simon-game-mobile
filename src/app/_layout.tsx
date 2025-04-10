@@ -8,8 +8,7 @@ export default function RootLayout() {
     <AppContainer>
       <Stack screenOptions={{ headerShown: false }}>
         <Stack.Screen name="index" />
-        <Stack.Screen name="+not-found" />
-        <Stack.Screen name="(screens)/Loser" />
+        <Stack.Screen name="(screens)/FinishGame" />
         <Stack.Screen name="(screens)/Game" />
       </Stack>
       <StatusBar style="light" translucent backgroundColor="transparent" />
